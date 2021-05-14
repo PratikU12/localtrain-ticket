@@ -6,7 +6,7 @@ class Book extends Database implements iBook{
 	public function getAllBook()
 	{
 		$sql = "SELECT *
-				FROM booked
+				FROM booked;
 				GROUP BY book_tracker;
 		";
 		return $this->getRows($sql);
