@@ -119,11 +119,6 @@ if(isset($_SESSION['departure_date'])){
 							        </th>
 							        <th>
 							        	<center>
-							        		Slots
-							        	</center>
-						        	</th>
-							        <th>
-							        	<center>
 							        		Fare
 							        	</center>
 						        	</th>
@@ -136,9 +131,7 @@ if(isset($_SESSION['departure_date'])){
 						   				<input value="<?= $getSit['acc_id']; ?>" type="radio" name="acc">
 						   				<?= $getSit['acc_type']; ?>
 						   			</td>
-						   			<td align="center">
-						   				<?= $getSit['acc_slot'] - $totalSit['sit']; ?>
-						   			</td>
+						   			
 						   			<td align="center"><?= $getSit['acc_price']; ?></td>
 						   		</tr>
 						   		<tr>
@@ -146,18 +139,13 @@ if(isset($_SESSION['departure_date'])){
 						   				<input value="<?= $getEcoA['acc_id']; ?>" type="radio" name="acc">
 						   				<?= $getEcoA['acc_type']; ?>
 						   			</td>
-						   			<td align="center">
-						   				<?= $getEcoA['acc_slot'] - $totalEcoA['ecoA']; ?>
-						   			</td>
+						   			
 						   			<td align="center"><?= $getEcoA['acc_price']; ?></td>
 						   		</tr>
 						   		<tr>
 						   			<td>
 						   				<input value="<?= $getEcoB['acc_id']; ?>" type="radio" name="acc">
 						   				<?= $getEcoB['acc_type']; ?>
-						   			</td>
-						   			<td align="center">
-						   				<?= $getEcoB['acc_slot'] - $totalEcoB['ecoB']; ?>
 						   			</td>
 						   			<td align="center"><?= $getEcoB['acc_price']; ?></td>
 						   		</tr>
